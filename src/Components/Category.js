@@ -74,7 +74,7 @@ export default function Category() {
 
   return (
     <section className="category">
-      <Container>
+      <Container className="px-5">
         <h3 className="category__title my-5">
           Browser Our Category
           <span className="category__title-green">Receipt</span>

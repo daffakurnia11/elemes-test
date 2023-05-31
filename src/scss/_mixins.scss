@@ -15,6 +15,9 @@
   font-weight: 500;
   font-size: 38px;
   line-height: 125%;
+  @media screen and (max-width: 576px) {
+    font-size: 28px;
+  }
 }
 
 @mixin heading4 {

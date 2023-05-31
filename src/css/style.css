@@ -368,6 +368,11 @@ table {
   line-height: 125%;
   color: #333333;
 }
+@media screen and (max-width: 576px) {
+  .category .category__title {
+    font-size: 28px;
+  }
+}
 .category .category__title-green {
   display: block;
   font-family: "Rubik", sans-serif;
@@ -376,6 +381,11 @@ table {
   font-size: 38px;
   line-height: 125%;
   color: #8bac3e;
+}
+@media screen and (max-width: 576px) {
+  .category .category__title-green {
+    font-size: 28px;
+  }
 }
 .category .category__card {
   border-color: transparent;
@@ -441,6 +451,11 @@ table {
   line-height: 125%;
   color: #333333;
 }
+@media screen and (max-width: 576px) {
+  .trending .trending__title {
+    font-size: 28px;
+  }
+}
 .trending .trending__title-green {
   display: block;
   font-family: "Rubik", sans-serif;
@@ -449,6 +464,11 @@ table {
   font-size: 38px;
   line-height: 125%;
   color: #8bac3e;
+}
+@media screen and (max-width: 576px) {
+  .trending .trending__title-green {
+    font-size: 28px;
+  }
 }
 .trending .trending__col:nth-of-type(1n) .trending__card {
   background-color: #e6f3f5;

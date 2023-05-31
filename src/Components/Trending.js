@@ -56,7 +56,7 @@ const trendingData = [
 export default function Trending() {
   return (
     <section className="trending">
-      <Container>
+      <Container className="px-5">
         <h3 className="trending__title my-5">
           Browser Our Trending
           <span className="trending__title-green">Receipt</span>
