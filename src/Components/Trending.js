@@ -81,7 +81,7 @@ export default function Trending() {
             </Col>
           ))}
         </Row>
-        <div className="d-flex justify-content-center my-4">
+        <div className="d-flex justify-content-center mt-4 mb-5">
           <Button className="trending__button">All Receipt</Button>
         </div>
       </Container>
