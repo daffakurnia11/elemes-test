@@ -20,15 +20,15 @@ export default function Footer() {
               Daerah Khusus Ibukota Jakarta 12950
             </p>
             <div className="d-flex">
-              <div className="footer__icon-container me-3">
+              <Button className="footer__icon-container me-3">
                 <BsEnvelope size={20} className="footer__icon-img" />
-              </div>
-              <div className="footer__icon-container me-3">
+              </Button>
+              <Button className="footer__icon-container me-3">
                 <BsTelephone size={20} className="footer__icon-img" />
-              </div>
-              <div className="footer__icon-container me-3">
+              </Button>
+              <Button className="footer__icon-container me-3">
                 <BsInstagram size={20} className="footer__icon-img" />
-              </div>
+              </Button>
             </div>
           </Col>
           <Col className="mb-3" lg md={6}>

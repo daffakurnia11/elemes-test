@@ -200,6 +200,11 @@ table {
   padding: 10px 18px;
   border-radius: 100px;
 }
+.navigation .navigation__button-primary:active {
+  background-color: #a4b441;
+  border-color: transparent;
+  color: #333333;
+}
 
 .header {
   position: relative;
@@ -257,6 +262,11 @@ table {
   border-radius: 100px;
   color: #f9fff6;
 }
+.header .header__button-primary:active {
+  background-color: #a4b441;
+  border-color: transparent;
+  color: #333333;
+}
 .header .header__button-secondary {
   font-family: "Rubik", sans-serif;
   font-style: normal;
@@ -268,6 +278,11 @@ table {
   border-color: transparent;
   padding: 10px 18px;
   border-radius: 100px;
+  color: #333333;
+}
+.header .header__button-secondary:active {
+  background-color: #a4b441;
+  border-color: transparent;
   color: #333333;
 }
 .header .header__image-container {
@@ -430,6 +445,11 @@ table {
   color: white;
   border-color: transparent;
 }
+.category .category__control:active {
+  background-color: #a4b441;
+  border-color: transparent;
+  color: #333333;
+}
 .category .category__icon-container {
   width: 33px;
   height: 33px;
@@ -529,6 +549,11 @@ table {
   border-radius: 100px;
   color: #f9fff6;
 }
+.trending .trending__button:active {
+  background-color: #a4b441;
+  border-color: transparent;
+  color: #333333;
+}
 
 .footer {
   background-color: #f9fff6;
@@ -553,6 +578,7 @@ table {
   justify-content: center;
   align-items: center;
   background-color: white;
+  border-color: transparent;
   border-radius: 24px;
   transition: all 0.3s;
 }
@@ -561,6 +587,11 @@ table {
 }
 .footer .footer__icon-container:hover .footer__icon-img {
   color: white;
+}
+.footer .footer__icon-container:active {
+  background-color: #a4b441;
+  border-color: transparent;
+  color: #333333;
 }
 .footer .footer__icon-img {
   color: #8bac3e;
@@ -597,6 +628,11 @@ table {
 .footer .footer__form-button {
   background-color: #8bac3e;
   border-color: #8bac3e;
+}
+.footer .footer__form-button:active {
+  background-color: #a4b441;
+  border-color: transparent;
+  color: #333333;
 }
 
 .copyright {
