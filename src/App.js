@@ -1,3 +1,4 @@
+import Category from "./Components/Category";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Navigation from "./Components/Navigation";
@@ -8,6 +9,7 @@ function App() {
     <>
       <Navigation />
       <Header />
+      <Category />
       <Trending />
       <Footer />
     </>

@@ -338,6 +338,101 @@ table {
   color: #757575;
 }
 
+.category .swiper {
+  width: 100%;
+  height: 220px;
+}
+.category .swiper-slide {
+  width: fit-content;
+}
+.category .swiper-slide:nth-of-type(1n + 0) .category__card {
+  background-color: #f0feeb;
+}
+.category .swiper-slide:nth-of-type(2n + 0) .category__card {
+  background-color: #eaeefa;
+}
+.category .swiper-slide:nth-of-type(3n + 0) .category__card {
+  background-color: #e6f3f5;
+}
+.category .swiper-slide:nth-of-type(4n + 0) .category__card {
+  background-color: #f9eef3;
+}
+.category .swiper-slide:nth-of-type(5n + 0) .category__card {
+  background-color: #f3f7d9;
+}
+.category .category__title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 125%;
+  color: #333333;
+}
+.category .category__title-green {
+  display: block;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 125%;
+  color: #8bac3e;
+}
+.category .category__card {
+  border-color: transparent;
+  border-radius: 16px;
+  padding: 16px 12px;
+  overflow: hidden;
+  width: 230px;
+  height: 170px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5.5px);
+}
+.category .category__card:hover {
+  background-image: url("../img/card-bg.png");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  height: 195px;
+}
+.category .category__card-icon {
+  width: 50px;
+}
+.category .category__card-name {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  color: #333333;
+}
+.category .category__card-items {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #333333;
+}
+.category .category__control {
+  background-color: #8bac3e;
+  padding: 6px 12px;
+  border-radius: 24px;
+  color: white;
+  border-color: transparent;
+}
+.category .category__icon-container {
+  width: 33px;
+  height: 33px;
+  background-color: #f9fff6;
+  border-radius: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.category .category__icon-img {
+  color: #8bac3e;
+}
+
 .trending .trending__title {
   font-family: "Rubik", sans-serif;
   font-style: normal;

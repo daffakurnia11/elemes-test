@@ -1,0 +1,92 @@
+.category {
+  .swiper {
+    width: 100%;
+    height: 220px;
+  }
+  .swiper-slide {
+    width: fit-content;
+    &:nth-of-type(1n + 0) {
+      .category__card {
+        background-color: $dark-green-secondary;
+      }
+    }
+    &:nth-of-type(2n + 0) {
+      .category__card {
+        background-color: $dark-blue-secondary;
+      }
+    }
+    &:nth-of-type(3n + 0) {
+      .category__card {
+        background-color: $light-blue-secondary;
+      }
+    }
+    &:nth-of-type(4n + 0) {
+      .category__card {
+        background-color: $purple-secondary;
+      }
+    }
+    &:nth-of-type(5n + 0) {
+      .category__card {
+        background-color: $light-green-secondary;
+      }
+    }
+  }
+  & &__title {
+    @include heading3;
+    color: $black-primary;
+    &-green {
+      display: block;
+      @include heading3;
+      color: $dark-green-primary;
+    }
+  }
+  & &__card {
+    border-color: transparent;
+    border-radius: 16px;
+    padding: 16px 12px;
+    overflow: hidden;
+    width: 230px;
+    height: 170px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5.5px);
+    &:hover {
+      background-image: url("../img/card-bg.png");
+      background-blend-mode: multiply;
+      background-size: cover;
+      background-position: center;
+      height: 195px;
+    }
+    &-icon {
+      width: 50px;
+    }
+    &-name {
+      @include heading6;
+      color: $black-primary;
+    }
+    &-items {
+      @include regular-text;
+      color: $black-primary;
+    }
+  }
+  & &__control {
+    background-color: $dark-green-primary;
+    padding: 6px 12px;
+    border-radius: 24px;
+    color: white;
+    border-color: transparent;
+  }
+  & &__icon {
+    &-container {
+      width: 33px;
+      height: 33px;
+      background-color: $white-primary;
+      border-radius: 33px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-img {
+      color: $dark-green-primary;
+    }
+  }
+}
