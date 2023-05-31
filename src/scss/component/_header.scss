@@ -2,17 +2,22 @@
   position: relative;
   z-index: 0;
   overflow: hidden;
-  min-height: calc(100vh - 76px);
-  padding: 100px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
   margin-top: -76px;
   &:before {
     z-index: -1;
     position: absolute;
     left: 0;
     top: 0;
-    content: url("../img/header-bg.png");
+    content: "";
+    background-image: url("../img/header-bg.png");
+    background-size: cover;
+    background-attachment: fixed;
     opacity: 0.05;
     height: 100%;
+    width: 100%;
   }
   & &__title {
     @include heading1;
