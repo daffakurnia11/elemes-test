@@ -24,7 +24,7 @@
     color: $dark-green-primary;
   }
   & &__desc {
-    @include paragraph;
+    @include big-text;
     color: $grey-primary;
   }
   & &__button {

@@ -54,7 +54,7 @@
       color: $black-primary;
     }
     &-category {
-      @include paragraph;
+      @include big-text;
       color: $dark-green-primary;
     }
   }

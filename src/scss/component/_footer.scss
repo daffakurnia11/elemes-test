@@ -1,0 +1,62 @@
+.footer {
+  background-color: $white-primary;
+  padding: 70px 62px;
+  border-radius: 20px;
+  & &__logo {
+    width: 200px;
+  }
+  & &__address {
+    @include regular-text;
+    color: $grey-primary;
+  }
+  & &__icon {
+    &-container {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      border-radius: 24px;
+      transition: all 0.3s;
+      &:hover {
+        background-color: $dark-green-primary;
+        .footer__icon-img {
+          color: white;
+        }
+      }
+    }
+    &-img {
+      color: $dark-green-primary;
+    }
+  }
+  & &__heading {
+    @include heading5;
+    color: $black-primary;
+  }
+  & &__menu {
+    &-list {
+      @include regular-text;
+      color: $grey-primary;
+      margin: 18px 0;
+    }
+  }
+  & &__text {
+    @include regular-text;
+    color: $grey-primary;
+  }
+  & &__form {
+    &-input::placeholder {
+      font-size: 14px;
+      color: $grey-primary;
+    }
+    &-button {
+      background-color: $dark-green-primary;
+      border-color: $dark-green-primary;
+    }
+  }
+}
+.copyright {
+  @include small-text;
+  color: $grey-primary;
+}

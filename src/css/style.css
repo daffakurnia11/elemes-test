@@ -413,4 +413,82 @@ table {
   padding: 10px 18px;
   border-radius: 100px;
   color: #f9fff6;
+}
+
+.footer {
+  background-color: #f9fff6;
+  padding: 70px 62px;
+  border-radius: 20px;
+}
+.footer .footer__logo {
+  width: 200px;
+}
+.footer .footer__address {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #757575;
+}
+.footer .footer__icon-container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 24px;
+  transition: all 0.3s;
+}
+.footer .footer__icon-container:hover {
+  background-color: #8bac3e;
+}
+.footer .footer__icon-container:hover .footer__icon-img {
+  color: white;
+}
+.footer .footer__icon-img {
+  color: #8bac3e;
+}
+.footer .footer__heading {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 125%;
+  color: #333333;
+}
+.footer .footer__menu-list {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #757575;
+  margin: 18px 0;
+}
+.footer .footer__text {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #757575;
+}
+.footer .footer__form-input::placeholder {
+  font-size: 14px;
+  color: #757575;
+}
+.footer .footer__form-button {
+  background-color: #8bac3e;
+  border-color: #8bac3e;
+}
+
+.copyright {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 125%;
+  color: #757575;
 }/*# sourceMappingURL=style.css.map */
