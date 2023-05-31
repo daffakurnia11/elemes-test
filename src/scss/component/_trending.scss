@@ -1,0 +1,66 @@
+.trending {
+  & &__title {
+    @include heading3;
+    color: $black-primary;
+    &-green {
+      display: block;
+      @include heading3;
+      color: $dark-green-primary;
+    }
+  }
+  & &__col {
+    &:nth-of-type(1n) {
+      .trending__card {
+        background-color: $light-blue-secondary;
+      }
+    }
+    &:nth-of-type(2n) {
+      .trending__card {
+        background-color: $dark-blue-secondary;
+      }
+    }
+    &:nth-of-type(3n) {
+      .trending__card {
+        background-color: $light-green-secondary;
+      }
+    }
+    &:nth-of-type(4n) {
+      .trending__card {
+        background-color: $purple-secondary;
+      }
+    }
+    &:nth-of-type(5n) {
+      .trending__card {
+        background-color: $dark-green-secondary;
+      }
+    }
+  }
+  & &__card {
+    border-color: transparent;
+    border-radius: 16px;
+    padding: 24px 12px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 11px 39px rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(5.5px);
+    &:hover {
+      background-image: url("../img/card-bg.png");
+      background-blend-mode: multiply;
+      background-size: cover;
+      background-position: center;
+    }
+    &-name {
+      @include heading4;
+      color: $black-primary;
+    }
+    &-category {
+      @include paragraph;
+      color: $dark-green-primary;
+    }
+  }
+  & &__button {
+    @include heading7;
+    @include dark-green-button;
+    color: $white-primary;
+  }
+}
