@@ -132,4 +132,68 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+#root {
+  font-family: "Rubik", sans-serif;
+}
+
+.navigation .navigation__link {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #757575;
+  margin: 0 12px;
+  position: relative;
+  width: fit-content;
+  transition: 0.3s ease-in-out;
+}
+@media screen and (max-width: 992px) {
+  .navigation .navigation__link {
+    margin: auto;
+  }
+}
+.navigation .navigation__link:hover {
+  color: #333333;
+}
+.navigation .navigation__badge-red {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -25%);
+  background: #e7462d;
+  padding: 6px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 8px;
+  text-align: center;
+  color: #f9fff6;
+}
+.navigation .navigation__button-link {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #333333;
+  text-decoration: none;
+}
+.navigation .navigation__button-primary {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #f9fff6;
+  text-decoration: none;
+  background-color: #8bac3e;
+  border-color: transparent;
+  padding: 10px 18px;
+  border-radius: 100px;
 }/*# sourceMappingURL=style.css.map */

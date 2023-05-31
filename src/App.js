@@ -1,5 +1,11 @@
+import Navigation from "./Components/Navigation";
+
 function App() {
-  return <div className="App">Test</div>;
+  return (
+    <>
+      <Navigation />
+    </>
+  );
 }
 
 export default App;

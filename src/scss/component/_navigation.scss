@@ -1,0 +1,47 @@
+.navigation {
+  & &__link {
+    @include heading7;
+    color: $grey-primary;
+    margin: 0 12px;
+    position: relative;
+    width: fit-content;
+    transition: 0.3s ease-in-out;
+    @media screen and (max-width: 992px) {
+      margin: auto;
+    }
+    &:hover {
+      color: $black-primary;
+    }
+  }
+  & &__badge-red {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -25%);
+    background: #e7462d;
+    padding: 6px 10px;
+    border-radius: 8px;
+    display: inline-block;
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 8px;
+    text-align: center;
+    color: $white-primary;
+  }
+  & &__button-link {
+    @include heading7;
+    color: $black-primary;
+    text-decoration: none;
+  }
+  & &__button-primary {
+    @include heading7;
+    color: $white-primary;
+    text-decoration: none;
+    background-color: $dark-green-primary;
+    border-color: transparent;
+    padding: 10px 18px;
+    border-radius: 100px;
+  }
+}

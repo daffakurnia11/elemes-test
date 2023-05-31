@@ -1,2 +1,9 @@
 @import "variable";
 @import "reset";
+@import "mixins";
+
+#root {
+  font-family: $primary-font;
+}
+
+@import "component/navigation";
