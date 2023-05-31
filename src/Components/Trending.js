@@ -63,7 +63,7 @@ export default function Trending() {
         </h3>
         <Row className="justify-content-center">
           {trendingData.map((data, index) => (
-            <Col key={index} xl={3} lg={4} sm={6} className="trending__col">
+            <Col key={index} xxl={3} lg={4} md={6} className="trending__col">
               <Card className="trending__card my-3">
                 <Card.Body>
                   <img
