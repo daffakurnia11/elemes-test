@@ -1,0 +1,94 @@
+.header {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  min-height: calc(100vh - 76px);
+  padding: 100px 0;
+  margin-top: -76px;
+  &:before {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: url("../img/header-bg.png");
+    opacity: 0.05;
+    height: 100%;
+  }
+  & &__title {
+    @include heading1;
+    color: $dark-green-primary;
+  }
+  & &__desc {
+    @include paragraph;
+    color: $grey-primary;
+  }
+  & &__button {
+    &-primary {
+      @include heading7;
+      @include dark-green-button;
+      color: $white-primary;
+    }
+    &-secondary {
+      @include heading7;
+      @include grey-button;
+      color: $black-primary;
+    }
+  }
+  & &__image {
+    &-container {
+      width: 500px;
+      height: 500px;
+      border-radius: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #c4c4c42d;
+      position: relative;
+      @media screen and (max-width: 992px) {
+        width: 275px;
+        height: 275px;
+      }
+    }
+    &-content {
+      width: 400px;
+      height: 400px;
+      @media screen and (max-width: 992px) {
+        width: 200px;
+        height: 200px;
+      }
+    }
+    &-card {
+      background: rgba(255, 255, 255, 0.74);
+      box-shadow: 0px 11px 39px rgba(0, 0, 0, 0.07);
+      backdrop-filter: blur(5.5px);
+      border-radius: 17px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translateX(-20%);
+      width: 300px;
+      padding: 18px 24px;
+      @media screen and (max-width: 992px) {
+        width: fit-content;
+        right: 0;
+        transform: translateX(50%);
+      }
+    }
+  }
+  & &__card {
+    &-image {
+      width: 50px;
+      height: 50px;
+      margin-right: 18px;
+    }
+    &-name {
+      @include heading7;
+      color: $black-primary;
+    }
+    &-category {
+      display: block;
+      @include small-text;
+      color: $grey-primary;
+    }
+  }
+}
