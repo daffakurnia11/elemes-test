@@ -61,9 +61,9 @@ export default function Trending() {
           Browser Our Trending
           <span className="trending__title-green">Receipt</span>
         </h3>
-        <Row>
+        <Row className="justify-content-center">
           {trendingData.map((data, index) => (
-            <Col key={index} lg={3} className="trending__col">
+            <Col key={index} xl={3} lg={4} sm={6} className="trending__col">
               <Card className="trending__card my-3">
                 <Card.Body>
                   <img
