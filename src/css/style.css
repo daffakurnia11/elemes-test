@@ -214,6 +214,7 @@ table {
   display: flex;
   align-items: center;
   margin-top: -76px;
+  padding: 80px 0;
 }
 .header:before {
   z-index: -1;
@@ -238,7 +239,7 @@ table {
 }
 @media screen and (max-width: 576px) {
   .header .header__title {
-    font-size: 48px;
+    font-size: 40px;
   }
 }
 .header .header__desc {
@@ -301,6 +302,12 @@ table {
     height: 275px;
   }
 }
+@media screen and (max-width: 576px) {
+  .header .header__image-container {
+    width: 200px;
+    height: 200px;
+  }
+}
 .header .header__image-content {
   width: 400px;
   height: 400px;
@@ -309,6 +316,12 @@ table {
   .header .header__image-content {
     width: 200px;
     height: 200px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header .header__image-content {
+    width: 150px;
+    height: 150px;
   }
 }
 .header .header__image-card {
@@ -325,15 +338,28 @@ table {
 }
 @media screen and (max-width: 992px) {
   .header .header__image-card {
-    width: fit-content;
+    width: 260px;
     right: 0;
     transform: translateX(50%);
+  }
+}
+@media screen and (max-width: 576px) {
+  .header .header__image-card {
+    bottom: -30px;
+    transform: translateX(20%);
+    width: 240px;
+    padding: 18px;
   }
 }
 .header .header__card-image {
   width: 50px;
   height: 50px;
   margin-right: 18px;
+}
+@media screen and (max-width: 576px) {
+  .header .header__card-image {
+    margin-right: 10px;
+  }
 }
 .header .header__card-name {
   font-family: "Rubik", sans-serif;
