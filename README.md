@@ -1,70 +1,155 @@
-# Getting Started with Create React App
+# Elemes.id Frontend Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+Elemes.id Frontend Test is a web application built predominantly with the React JavaScript library. Its main purpose is to provide users access to a wide array of food items, each accompanied by a detailed recipe. In addition, the application features a 'Trending Foods' section to highlight currently popular or trending foods.
 
-In the project directory, you can run:
+This application is particularly beneficial for food enthusiasts looking to explore new recipes, discover trending foods, and draw inspiration for their next culinary endeavor.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Live Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The application is deployed and can be accessed at [elemes.dafkur.com](http://elemes.dafkur.com)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
 
-### `npm run build`
+Below are some screenshots of the Elemes.id Frontend Test application:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Landing Page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ![Landing Page](/Web-capture.jpeg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Folder Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+/elemes-test
+  README.md
+  README_REACT.md
+  package.json
+  package-lock.json
+  .gitignore
+  public/
+    index.html
+    logo.svg
+    manifest.json
+    robots.txt
+  src/
+    Components/           # contains react components
+      StarRating.js
+      Category.js
+      Footer.js
+      Header.js
+      Navigation.js
+      Trending.js
+    scss/
+      component/          # contains SCSS styles for components
+        _category.scss
+        _footer.scss
+        _header.scss
+        _navigation.scss
+        _trending.scss
+      _mixins.scss
+      _reset.scss
+      _variable.scss
+      style.scss
+    css/                  # contains CSS styles compiled from SCSS
+      style.css
+      style.css.map
+    img/                  # contains all static images
+      foods/
+      icons/
+    App.js
+    App.test.js
+    index.js
+    reportWebVitals.js
+    setupTest.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Libraries
 
-## Learn More
+The following libraries were used to enhance both the user experience and developer efficiency:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **[React](https://reactjs.org/)**: A JavaScript library for constructing user interfaces. This was used to build all the UI components of our app.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **[React-Bootstrap](https://react-bootstrap.github.io/)**: A front-end framework that offers pre-designed, responsive React components styled with Bootstrap. This was used for the layout and styling of the application.
 
-### Code Splitting
+- **[React-Icons](https://react-icons.github.io/react-icons/)**: Employed to incorporate widely recognized icons into our project. This package allows access to a broad range of free, open-source icons.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **[Swiper](https://swiperjs.com/react)**: A potent and modern touch slider. It was used to establish a responsive and mobile-friendly slider for our components.
 
-### Analyzing the Bundle Size
+Each library has played a significant role in the application, and we are grateful to all the creators and contributors for their efforts in developing these open-source tools.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Clone
 
-### Advanced Configuration
+1. To clone this repository to your local machine, you need to have [git installed](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) on your system. Then run the following command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+git clone https://github.com/daffakurnia11/elemes-test.git
+```
 
-### Deployment
+2. Navigate into the cloned repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+cd elemes-test
+```
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Setup
+
+### Requirements
+
+Before setting up the project make sure you have the following installed:
+
+- [Node.js and npm](https://nodejs.org/en/download/): Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. npm is a package manager for JavaScript and is included with Node.js.
+
+### Installation
+
+To set up the project for development on your local machine, please follow the instructions below:
+
+1. Install the project dependencies. This can be done locally using npm or yarn.
+
+```bash
+npm install
+```
+
+2. Start the development server
+
+```bash
+npm start
+```
+
+The project should now be up and running at http://localhost:3000
+If it's not, check the console for any issues that might have occurred.
+
+---
+
+## Features
+
+List of features ready and TODOs for future development
+
+- Responsive UI for desktop and mobile
+- Menu swiper using mouse drag and navigation button
+- Interactive menu card background upon hover
+- Contact and address details
+- Subscription form
+
+---
+
+## Author
+
+- Daffa Kurnia Fatah - [Dafkur.com](https://dafkur.com/) - daffakurniaf11@gmail.com
+
+---
